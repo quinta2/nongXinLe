@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>订单列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="css/base.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<link rel="stylesheet" href="css/Cservice.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<link rel='stylesheet' href='css/swiper.min.css'> <!--选项卡-->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swiper.min.js"></script>  <!--选项卡-->
+<script src="js/idangerous.swiper.min.js"></script> <!--选项卡-->
+</head>
+<body>
+<header>
+	审核进度
+    <a href="#" class="return_btn"></a>
+</header>
+<div class="Cservice">   
+    <article class="service pro">
+        <b>处理中</b>
+        <p>服务号：49782248225241<br/>申请时间：2017-02-16 18:50:22</p>
+        <span class="progresspan">
+            <dl class="current">
+            	<i></i>
+                <dd>您服务单已退款，请您注意查收</dd>
+                <dt>2016-12-29 08:15:15</dt>
+            </dl>
+            <dl>
+            	<i></i>
+                <dd>您服务单已退款，请您注意查收</dd>
+                <dt>2016-12-29 08:15:15</dt>
+            </dl>
+            <dl>
+            	<i></i>
+                <dd>您服务单已退款，请您注意查收</dd>
+                <dt>2016-12-29 08:15:15</dt>
+            </dl>
+            <dl>
+            	<i></i>
+                <dd>您服务单已退款，请您注意查收</dd>
+                <dt>2016-12-29 08:15:15</dt>
+            </dl>
+            <dl>
+            	<i></i>
+                <dd>您服务单已退款，请您注意查收</dd>
+                <dt>2016-12-29 08:15:15</dt>
+            </dl>
+        </span>  
+    </article>
+    
+    
+</div>
+     
+
+
+
+</body>
+</html>
+<script>
+/*滑动选项卡*/
+var mySwiper = new Swiper('.swiper-container',{
+	autoHeight: true,
+	onSlideChangeStart: function(){
+		var h=$(".swiper-slide-visible").children("div").height();
+		$(".swiper-container").css("height",h);
+		$(".dropdiv").hide();
+		$(".tabs .default").removeClass('default');
+		$(".tabs li").eq(mySwiper.activeIndex).addClass('default');
+		
+		}
+});
+	 $(".tabs li").on('click',function(e){
+        e.preventDefault();
+        $(".tabs .default").removeClass('default');
+        $(this).addClass('default');
+        mySwiper.swipeTo($(this).index());
+      });
+      $(".tabs li").click(function(e){
+        e.preventDefault();
+      });
+</script>
+<script>
+$(function(){
+	/*控制选项卡第一页的高度*/
+	var h=$(".swiper-slide.xq.swiper-slide-visible").children("div").height();
+	$(".swiper-container").css("height",h);
+	
+	$(window).scroll(function(){
+		if ($(window).scrollTop()>$("header").height()) {
+			$(".favor-header-bar").addClass("fixtab");
+		}else{
+			$(".favor-header-bar").removeClass("fixtab");
+		}
+	});
+})
+</script>

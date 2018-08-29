@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>订单列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<title>登录页面</title>
+<link rel="stylesheet" href="css/base.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<link rel="stylesheet" href="css/checkstand.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<link rel='stylesheet' href='css/swiper.min.css'> <!--选项卡-->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swiper.min.js"></script>  <!--选项卡-->
+<script src="js/idangerous.swiper.min.js"></script> <!--选项卡-->
+</head>
+
+<body class="ac">
+<header>
+	结算管理
+    <a href="#" class="return_btn"></a>
+</header>
+<div class="clearx" style="height:5.8rem; background:#eee"></div>
+<article class="white">
+    <div class="favor-header-bar">
+        <ul class="tabs">
+            <li class="default"><a href="javascript:void(0);" id="btn1" hidefocus="true">已出账</a></li>
+            <li><a href="javascript:void(0);" id="btn2" hidefocus="true">结算完成</a></li>
+        </ul>
+    </div>
+    <div class="swiper-container favor-list">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide xq">
+                    <div class="account">
+                        <dl><dd>结算单号：12345678</dd><dt></dt><div class="clearx"></div></dl>
+                        <dl><dd>结算单号：12345678</dd><dt></dt><div class="clearx"></div></dl>
+                        <dl><dd>结算单号：12345678</dd><dt></dt><div class="clearx"></div></dl>
+                        <dl><dd>结算单号：12345678</dd><dt></dt><div class="clearx"></div></dl>
+                        <div class="clearx" style="height:15px;"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="account">
+                        <dl><dd>结算单号：12345678</dd><dt>佣金总额：<a>￥62</a></dt><div class="clearx"></div></dl>
+                        <dl><dd>结算单号：12345678</dd><dt>佣金总额：<a>￥62</a></dt><div class="clearx"></div></dl>
+                        <dl><dd>结算单号：12345678</dd><dt>佣金总额：<a>￥62</a></dt><div class="clearx"></div></dl>
+                        <dl><dd>结算单号：12345678</dd><dt>佣金总额：<a>￥6502.54</a></dt><div class="clearx"></div></dl>
+                        <div class="clearx" style="height:15px;"></div>
+                    </div>
+                </div>
+            </div>
+     </div>
+</article>
+</body>
+</html>
+<script>
+/*滑动选项卡*/
+var mySwiper = new Swiper('.swiper-container',{
+	autoHeight: true,
+	onSlideChangeStart: function(){
+		var h=$(".swiper-slide-visible").children("div").height();
+		$(".swiper-container").css("height",h);
+		$(".dropdiv").hide();
+		$(".tabs .default").removeClass('default');
+		$(".tabs li").eq(mySwiper.activeIndex).addClass('default');
+		
+		}
+});
+	 $(".tabs li").on('click',function(e){
+        e.preventDefault();
+        $(".tabs .default").removeClass('default');
+        $(this).addClass('default');
+        mySwiper.swipeTo($(this).index());
+      });
+      $(".tabs li").click(function(e){
+        e.preventDefault();
+      });
+</script>
+<script>
+$(function(){
+	/*控制选项卡第一页的高度*/
+	var h=$(".swiper-slide.xq.swiper-slide-visible").children("div").height();
+	$(".swiper-container").css("height",h);
+})
+</script>

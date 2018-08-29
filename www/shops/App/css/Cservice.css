@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+body { background:#eee}
+img { width:100%}
+header{width:100%; height:5rem; position:relative;/*position: fixed;top:0;left:0; z-index:99;*/ background:#fff; color:#191919; text-align:center; line-height:5rem; font-size:1.6rem;/*box-shadow:0 1px 3px #B9B9B9 */ border-bottom:1px solid #eee}
+.return_btn { display:block; width:15px; height:5rem; position:absolute; top:0; left:10px; background:url(../images/icon_1.png) no-repeat center; background-size:25px auto}
+
+/*退款/售后*/
+.favor-header-bar { line-height:3rem;background-color: #fff;height:4rem; width:100%;}
+.favor-header-bar ul { width:100%; margin:0 auto; }
+.fixtab { position:fixed; left:0; top:0; z-index:100;box-shadow:0 1px 3px #B9B9B9 }
+.favor-header-bar li{display: block;width:50%;text-align: center;float: left;margin-left:-1px;height:3.8rem;line-height:3.8rem;position: relative;}
+.favor-header-bar li:last-child{border-right:none;}
+.favor-header-bar li.default a{color:#fa1545;border-bottom: 2px solid #fa1545;}
+.favor-header-bar li span{position: absolute;display: block;width:25%;top:-0.4rem;right:0.2rem;max-width: 32px;}
+.favor-header-bar a{font-size:1.4rem;color:#333;display:block;}
+.Cservice { width:100%}
+.Cservice>p { width:100%; text-align:center; margin:10px 0}
+.Cservice>p input { width:80%; border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;-webkit-border-radius:3px; padding:5px 0; border:none; padding-left:30px; background:url(../images/Cservice_icon_sel.png) no-repeat 5px center #fff; background-size:16px 16px; font-size:1.2rem; color:#6d6d6d}
+
+article.service { background:#fff; padding:10px; margin-bottom:10px; position:relative; border-bottom:1px solid #e6e5e5}
+article.service>b { font-size:1.2rem; color:#f42f4a; font-weight:normal; position:absolute; top:10px; right:10px;}
+article.service p { font-size:1.2rem; line-height:18px}
+article.service>span { display:block; width:100%; padding:10px 0; border-bottom:1px solid #eee; position:relative}
+article.service>span p { padding-left:5px}
+article.service>span p.gray { color:#6d6d6d}
+article.service>span>a.pic { display:inline-block; width:25%; float:left}
+article.service>span>span { display:inline-block; width:75%; float:right;}
+a.linebtn { color: #fa1d4a; font-size: 1.2rem; border: 1px solid #fa1d4a; border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; -webkit-border-radius: 3px; padding: 0.3rem 1rem;}
+a.linebtn.gray { border-color: #666;color: #666; position:absolute; bottom:10px; right:0}
+article.service p.serv { text-align:right; margin-top:5px}
+article.service p.progress { height:30px; text-align:right; line-height:30px;margin:10px 0}
+article.service p.progress a { position:static}
+article.service>a { display:block; color:#fa1d4a; height:40px; line-height:40px; border-top:1px solid #eee;border-bottom:1px solid #eee; position:relative; margin-top:10px}
+article.service>a i { display:block; width:20px; height:35px; position:absolute; top:0; right:0; background:url(../images/order/icon_into.png) no-repeat center; background-size:30px auto}
+
+
+/*申请售后*/
+article.service.apply>a { display:inline-block; width:30%; float:left; height:auto}
+article.service.apply>span{ display:inline-block; width:69%; float:right; border:none; }
+article.service.apply>span p {font-size:1.4rem }
+article.service.apply h3 { font-weight:normal; font-size:1.3rem; display:block; margin-bottom:10px}
+a.gray {color: #000;border: 1px solid #666; border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; -webkit-border-radius: 3px; padding: 0.3rem 1rem; font-size:1.4rem; margin-right:10px}
+a.gray.current { border-color:#fa1d4a; background:#fa1d4a; color:#fff}
+article.service.apply p.apply { line-height:35px}
+article.service.apply span.num { display: block; width: 120px;height: 30px;line-height: 30px; border: 1px solid #b8b6b6;position: relative; text-align: center; border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px;-webkit-border-radius: 3px; float:none; padding:0}
+article.service.apply span.num .minus{display: block; width: 30px;height: 30px; line-height: 30px; text-align: center; color: #333;font-size: 2.1rem; position: absolute; top:0; left:0;border-right: 1px solid #b8b6b6;}
+article.service.apply span.num .plus {    display: block;width:30px; height: 30px;line-height: 30px; text-align: center; color: #333; font-size: 2.1rem; position: absolute; top:0; right:0;border-left: 1px solid #b8b6b6;}
+article.service.apply span.num input {width: 45px; margin: 0 auto; text-align: center; border: none; font-size:1.4rem}
+article.service.apply textarea { width:100%;resize:none; border:none}
+article.service.apply p.p1 { text-align:left; color:#666}
+article.service.apply p.p2 { text-align:right; color:#666}
+article.service.apply ul li { width:20%; float:left}
+article.service.apply ul li a { display:block; border:1px solid #d8d8d8; margin:5px 2px}
+article.service.apply a.add { border:none }
+
+article.service>p { font-size:1.3rem; color:#000; padding-bottom:5px; border-bottom:1px solid #eee; margin-bottom:10px}
+article.service>span.progresspan { border:none}
+article.service>span.progresspan dl { width:80%; margin:0 auto; padding-bottom:20px;padding-left:20px;border-left: 1px dotted #6d6d6d; position:relative}
+article.service>span.progresspan dl dd { font-size:1.3rem;}
+article.service>span.progresspan dl dt { font-size:1.2rem;}
+article.service>span.progresspan dl.current{ color:#f42f4a;}
+article.service>span.progresspan dl i { display:block; width:20px; height:20px; background:url(../images/Cservice_icon2.png) no-repeat center #fff; background-size:20px 20px; position:absolute; top:0px; left:-10px;}
+article.service>span.progresspan dl.current i {background:url(../images/Cservice_icon1.png) no-repeat center #fff; background-size:20px 20px;}
+footer { width:100%; height:5rem; text-align:center; line-height:5rem; position:fixed; left:0; bottom:0; z-index:100 }
+footer a { display:block;font-size:1.6rem; color:#fff; background:#fa1545 }

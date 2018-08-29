@@ -1,0 +1,31 @@
+[{
+	"pro_img":"./static/images/merchandise/pic_1.jpg",
+	"activity_img1":"./static/images/index/activ_1.jpg",
+	"activity_img2":"./static/images/index/activ_2.jpg",
+	"title":"MEISINI美行米字旗拉杆箱24寸旅行登机箱大放送旅行登机等发光点蛋箱男女行李包",
+	"advertisement1":"2017就要iPhone！暖春开学季，就要“焕”新装！",
+	"advertisement2":"2017就要iPhone",
+	"price":"3750.00",
+	"commission":"60.00",
+	"sales_volume":"12345"
+},{
+	"pro_img":"./static/images/merchandise/pic_2.jpg",
+	"activity_img1":"./static/images/index/activ_1.jpg",
+	"activity_img2":"./static/images/index/activ_2.jpg",
+	"title":"MEISINI美行米字旗拉杆箱24寸旅行登机箱大放送旅行登机等发光点蛋箱男女行李包",
+	"advertisement1":"2017就要iPhone！暖春开学季，就要“焕”新装！",
+	"advertisement2":"2017就要iPhone",
+	"price":"3750.00",
+	"commission":"60.00",
+	"sales_volume":"12345"
+},{
+	"pro_img":"./static/images/merchandise/pic_1.jpg",
+	"activity_img1":"./static/images/index/activ_1.jpg",
+	"activity_img2":"./static/images/index/activ_2.jpg",
+	"title":"MEISINI美行米字旗拉杆箱24寸旅行登机箱大放送旅行登机等发光点蛋箱男女行李包",
+	"advertisement1":"2017就要iPhone！暖春开学季，就要“焕”新装！",
+	"advertisement2":"2017就要iPhone",
+	"price":"3999.00",
+	"commission":"60.00",
+	"sales_volume":"6666"
+}]

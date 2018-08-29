@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/index.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<link rel="stylesheet" href="css/base.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<style>
+#myscroll{display:block; width:85%;  margin:0 auto; position:relative; overflow:hidden;}
+#myscroll #myscrollbox{display:block; float:left; position:absolute; left:0; top:0; width:300%;}
+#myscroll ul{display:block; float:left; list-style-type:none; padding:0; margin:0;}
+#myscroll ul li{display:block; float:left; padding:0; margin:0; /*width:20%;*/padding:0 5px;}
+#myscroll ul li a{display:block; width:92%; margin:0 auto; position:relative; color:#333;}
+#myscroll a .intro{position:absolute; left:0; z-index:10; background-color:rgba(255,255,255,.80); padding:0 10px;}
+#myscroll a .intro h5{padding:0; margin:0; font-size:16px; font-weight:bold; padding:0 47px 0 15px; background:url(images/go.png) right no-repeat; height:40px; width:180px; line-height:40px; border-bottom:1px solid rgba(215,0,15,.2);}
+#myscroll a .intro p{font-size:13px; line-height:20px; margin:10px 15px; height:40px; overflow:hidden;}
+#myscroll a .intro{bottom:-61px;}
+#myscroll a:hover .intro{bottom:0px;}
+
+#mybtns{  }
+#mybtns a{width:42px; height:173px; display:block; float:left; margin-right:1px; }
+#mybtns a:hover{background-color: #d7000f;}
+#mybtns a:hover, #myscroll, #mybtns a,#myscroll a:hover .intro, #myscroll a .intro,#myscroll #myscrollbox{
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+#left{ display:block; width:7%;position:absolute; top:5rem; left:0; z-index:100}
+#right{display:block; width:7%;position:absolute; top:5rem; right:0; z-index:100}
+
+</style>
+</head>
+
+<body>
+<!--头部导航-->
+<header>
+    <div class="header">
+        <a class="logo" href="#"><img src="images/index/logo.png" ></a>
+        <span class="selectinput"><input type="text" value="智能闹钟"><i class="icon_sel"></i></span>
+        <a class="message"><img src="images/index/icon_mes.png"></a>
+        <div class="clearx"></div>
+	</div>
+</header>
+
+
+<!--轮播图-->
+<div class="m-slider" id="slider">
+    <div class="ks_dbox ks_ts">
+         <div class="ks_wrap">
+           <img src="images/index/banner1.jpg">
+         </div>
+         <div class="ks_wrap">
+           <img src="images/index/banner1.jpg">
+         </div>
+         <div class="ks_wrap">
+           <img src="images/index/banner1.jpg">
+         </div>
+    </div>
+    <div class="ks-circles"><ul class="ks_wt"></ul></div>
+</div>
+
+
+<!--导航图标-->
+<nav>
+    <div class="nav-box">
+        <a href="javascript:;"><img src="images/index/nav01.png"><span>赶集</span></a>
+        <a href="javascript:;"><img src="images/index/nav02.png"><span>分类</span></a>
+        <a href="javascript:;"><img src="images/index/nav03.png"><span>预告</span></a>
+        <a href="javascript:;"><img src="images/index/nav04.png"><span>优品</span></a>
+        <a href="javascript:;"><img src="images/index/nav05.png"><span>特卖</span></a>	
+    </div>
+</nav>
+
+
+<!--滚动图片-->
+<div class="scrollpic">
+	<div class="tit1"><img src="images/index/tit1.jpg" ></div>
+	
+	
+	  <a href="javascript:;" id="left"><img src="images/index/jt_l.png" ></a>
+	  <a href="javascript:;" id="right"><img src="images/index/jt_r.png" ></a>
+	
+  <div id="myscroll">
+		<div id="myscrollbox">
+			<ul>
+				<li><a href="http://www.datouwang.com/"><img src="images/index/pic1.jpg" ></a></li>
+				<li><a href="http://www.datouwang.com/"><img src="images/index/pic1.jpg" ></a></li>
+				<li><a href="http://www.datouwang.com/"><img src="images/index/pic1.jpg" ></a></li>
+				<li><a href="http://www.datouwang.com/"><img src="images/index/pic1.jpg" ></a></li>
+				<li><a href="http://www.datouwang.com/"><img src="images/index/pic1.jpg" ></a></li>
+				<li><a href="http://www.datouwang.com/"><img src="images/index/pic1.jpg" ></a></li>
+				<div class="clearx"></div>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<!--活动-->
+<div class="activity">
+	<div class="tit2"><img src="images/index/tit2.jpg"></div>
+    <div class="PicDiv1">
+        <div class="halfpic"><a href="#"><img src="images/index/activ_1.jpg"></a></div>
+        <div class="halfpic"><a href="#"><img src="images/index/activ_2.jpg"></a></div>
+        <div class="clearx" style="height:0.5rem"></div>
+        <div class="thirdpic"><a href="#"><img src="images/index/activ_3.jpg"></a></div>
+        <div class="thirdpic"><a href="#"><img src="images/index/activ_4.jpg"></a></div>
+        <div class="thirdpic"><a href="#"><img src="images/index/activ_5.jpg"></a></div>
+        <div class="clearx"></div>
+    </div>
+</div>
+
+<!--优品-->
+<div class="ypdiv">
+	<div class="tit3"><img src="images/index/tit3.jpg"></div>
+    <div class="picbox">
+    	<div class="pic_L"><a href="#"><img src="images/index/yp_1.jpg"></a></div>
+        <div class="pic_R"><a href="#"><img src="images/index/yp_2.jpg"></a></div>
+        <div class="pic_R"><a href="#"><img src="images/index/yp_2.jpg"></a></div>
+    	<div class="clearx"></div>
+    </div>
+    <div class="picbox">
+    	<div class="pic_L"><a href="#"><img src="images/index/yp_1.jpg"></a></div>
+        <div class="pic_R"><a href="#"><img src="images/index/yp_2.jpg"></a></div>
+        <div class="pic_R"><a href="#"><img src="images/index/yp_2.jpg"></a></div>
+    	<div class="clearx"></div>
+    </div>
+</div>
+
+
+<!--好店-->
+<div class="hdiv">
+	<div class="tit4"><img src="images/index/tit4.jpg"></div>
+    <div class="pic_L"><a href="#"><img src="images/index/hd_1.jpg"><span><nobr>[太原市中科云谷商贸有限公司]</nobr></span></a></div>
+    <div class="pic_R"><a href="#"><img src="images/index/hd_1.jpg"><span><nobr>[太原市中公司]</nobr></span></a></div>
+    <div class="clearx"></div>
+</div>
+
+<!--猜你喜欢-->
+<div class="guess">
+	<div class="tit5"><img src="images/index/tit5.jpg"></div>
+    <ul>
+    	<li>
+            <a href="#"><img src="images/index/guess_1.jpg"><span>汇源100%橙汁 200ml*12盒 礼盒装健康早点喝汇源适当方式发给斯蒂芬</span><b>￥125</b></a>
+            
+        </li>
+        <li>
+            <a href="#"><img src="images/index/guess_1.jpg"><span>汇源100%橙汁 200ml*12盒 礼盒装健康早点喝汇源适当方式发给斯蒂芬</span><b>￥125</b></a>
+            
+        </li>
+        <li>
+            <a href="#"><img src="images/index/guess_1.jpg"><span>汇源100%橙汁 200ml*12盒 礼盒装健康早点喝汇源适当方式发给斯蒂芬</span><b>￥125</b></a>
+            
+        </li>
+        <li>
+            <a href="#"><img src="images/index/guess_1.jpg"><span>汇源100%橙汁 200ml*12盒 礼盒装健康早点喝汇源适当方式发给斯蒂芬</span><b>￥125</b></a>
+            
+        </li>
+        <div class="clearx"></div>
+    </ul>    
+</div>
+<div class="clearx" style="height:6rem"></div>
+
+<!--底部-->
+<footer>
+    <a href="javascript:;" class="pick">
+        <i class="icon-f1"></i>
+        首页
+    </a>
+    <a href="#">
+        <i class="icon-f2"></i>
+        分类
+    </a>
+    <a href="#">
+        <i class="icon-f3"></i>
+        好货
+    </a>
+    <a href="#">
+        <i class="icon-f4"></i>
+        购物车
+    </a>
+    <a href="#">
+        <i class="icon-f5"></i>
+        我的农芯乐
+    </a>
+</footer>
+</body>
+</html>
+
+<script type="text/javascript" src="js/widget/slider.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/zepto.kslider.js"></script>
+
+<script type="text/javascript" src="js/touch.js"></script>      <!--新版zepto合并版中不包括touch.js-->
+<script type="text/javascript" src="js/zepto.extend.js"></script>
+<script type="text/javascript" src="js/zepto.ui.js"></script>
+<script type="text/javascript">
+$(function(){
+ //slider
+  $('#slider').slider({
+	className: 'slider_box',
+	tick: 4000 //播放间隔
+ });
+ var imgPieces=$('.m-slider').find('.ks_wrap');
+ for(var i=0;i<imgPieces.length;i++){
+   $('.ks_wt').append('<li></li>');
+   $('.ks_wt').find('li').eq(0).addClass('active');
+ }
+ 
+ 
+ 
+ 
+ 
+});
+</script> 
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#myscrollbox li").width($("#myscroll").width()/3-10);
+	$("#myscroll").height($("#slider").height()/3*2);
+	  var blw=$("#myscrollbox li").width();
+	  //获取单个子元素所需宽度
+	  var liArr = $("#myscrollbox ul").children("li");
+	  //获取子元素数量
+	  var mysw = $("#myscroll").width();
+	  //获取子元素所在区域宽度
+	  var mus = parseInt(mysw/blw);
+	  //计算出需要显示的子元素的数量
+	  var length = liArr.length-mus;
+	  //计算子元素可移动次数（被隐藏的子元素数量）
+	  var i=0
+	  $("#right").click(function(){
+		  i++
+		  //点击i加1
+		  if(i<length){
+		      $("#myscrollbox").css("left",-(blw*i));
+			  //子元素集合向左移动，距离为子元素的宽度乘以i。
+		  }else{
+			  i=length;
+			  $("#myscrollbox").css("left",-(blw*length));
+			  //超出可移动范围后点击不再移动。最后几个隐藏的元素显示时i数值固定位已经移走的子元素数量。
+	      }
+      });
+	  $("#left").click(function(){
+		  i--
+		  //点击i减1
+		  if(i>=0){
+		     $("#myscrollbox").css("left",-(blw*i));
+			 //子元素集合向右移动，距离为子元素的宽度乘以i。
+		  }else{
+			 i=0;
+			 $("#myscrollbox").css("left",0);
+			 //超出可移动范围后点击不再移动。最前几个子元素被显示时i为0。
+	      }
+      });
+	  
+	  /*页面滚动到banner图下方时导航背景改变*/
+	  $(window).scroll(function(){
+		
+		var h=$(window).height();
+		var h1=$(".header").height();
+		if ($(window).scrollTop()>$("#slider").height()) {
+			
+			$("header").addClass("Hnavbg");
+		}else{
+			$("header").removeClass("Hnavbg");
+		}
+	  })
+});
+</script>

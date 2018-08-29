@@ -1,0 +1,6 @@
+{
+  "auth":true,
+  "data":{"username":"alex","psw":"alex123","authface":"../images/Mcenter/icons_5.png"},
+  "time":10000,
+  "startTime":0
+}

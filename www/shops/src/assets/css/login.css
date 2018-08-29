@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+body { background:#f7f2f2}
+img{ width: 100%; }
+header{width:100%; height:5rem;position: fixed;top:0;left:0; z-index:9999; background:#fff; color:#191919; text-align:center; line-height:5rem; font-size:1.6rem; box-shadow:0 -5px 10px #000}
+.return_btn { display:block; width:15px; height:5rem; position:absolute; top:0; left:10px; background:url(../images/icon_1.png) no-repeat center; background-size:25px auto}
+.logodiv { width:100%; text-align:center; position:absolute; top:9rem; left:0; }
+.logodiv img { width:200px}
+.loginF { width:100%; position:absolute; left:0; top:18rem}
+.loginF dl { width:100%; border-bottom:1px solid #bdbbbb; height:40px}
+.loginF dl dt { width:30%; float:left; line-height:40px; text-align:center; font-size:1.4rem}
+.loginF dl dd { width:60%;float:left;line-height:40px; font-size:1.4rem}
+.loginF dl dd input { width:100%; font-size:1.4rem; color:#3c3b3b; border:none; background:none}
+.loginF dl dd input::-webkit-input-placeholder { /* WebKit browsers*/ 
+　　color:#3c3b3b;font-size:1.4rem;
+　　}
+.loginF dl dd input:-moz-placeholder {  /* Mozilla Firefox 4 to 18*/ 
+　　color:#3c3b3b;font-size:1.4rem;
+　　}
+.loginF dl dd input::-moz-placeholder {  /* Mozilla Firefox 19+*/ 
+　　color:#3c3b3b;font-size:1.4rem;
+　　}
+.loginF dl dd input:-ms-input-placeholder { /* Internet Explorer 10+*/ 
+　　color:#3c3b3b;font-size:1.4rem;
+}
+.loginF .btn { display:block; width:90%; margin:0 auto; text-align:center; height:4rem; line-height:4rem; color:#fff; background-image: linear-gradient(to right, #ff3c00,#f90f35);-moz-background-image: linear-gradient(to right, #ff3c00,#f90f35);-ms-background-image: linear-gradient(to right, #ff3c00,#f90f35);-o-background-image: linear-gradient(to right, #ff3c00,#f90f35);-webkit-background-image: linear-gradient(to right, #ff3c00,#f90f35); border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;-webkit-border-radius:5px; margin-top:3rem; font-size:1.4rem}
+.linkbox { width:90%; margin:0 auto; position:relative; margin-top:2rem}
+.linkbox a { font-size:1.2rem; color:#3c3b3b}
+.linkbox a.link1 { position:absolute; top:0; left:0}
+.linkbox a.link2 { position:absolute; top:0; right:0}
+
+
+/*注册*/
+.loginF.rF1 dl{ position:relative}
+.loginF.rF1 dl dt { text-align:left; margin-left:10px; width:80%;}
+.loginF.rF1 dl.valid dt { width:60%}
+.loginF.rF1 dl dt { padding-left:20px; }
+.loginF.rF1 dl dt input { width:100%; border:none; background:none}
+.loginF.rF1 dl dt.phone{ background:url(../images/reg_1.png) left center no-repeat;  background-size:17px 17px}
+.loginF.rF1 dl dt.message{ background:url(../images/reg_2.png) left center no-repeat;  background-size:17px 17px}
+.loginF.rF1 dl dt.pasw1{ background:url(../images/reg_3.png) left center no-repeat;  background-size:17px 17px}
+.loginF.rF1 dl dt.pasw2{ background:url(../images/reg_4.png) left center no-repeat;  background-size:17px 17px}
+.loginF.rF1 dl>a.valid { display:inline-block; font-size:1.2rem; color:#333; border-radius:3px; border:1px solid #fa213a; padding:0 5px; height:20px; line-height:20px; position:absolute; top:10px; right:10px}
+.loginF.rF1 dl>a.valid.v2 { padding:0 20px}
+::-webkit-input-placeholder{ color:#333}
+:-moz-placeholder {color:#333}
+::-moz-placeholder {color:#333}
+:-ms-input-placeholder { color:#333}
+
+.loginF.rF1 dl p { font-size:1.4rem; color:#7f7e7f; text-align:center}
+.loginF.rF1 dl p .orange { color:#ff3903; font-weight:normal}
+

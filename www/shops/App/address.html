@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>订单列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<title>登录页面</title>
+<link rel="stylesheet" href="css/base.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<link rel="stylesheet" href="css/address.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+<header>
+	收货地址管理
+    <a href="#" class="return_btn"></a>
+</header>
+<div class="clearx" style="height:5.8rem"></div>
+<article class="addrbox">
+	<dl>
+    	<dd>张伟</dd><dt>15645345855</dt>
+        <div class="clearx"></div>
+    </dl>
+    <p>山西省太原市杏花岭区十二冶大厦四层山西省太原市杏花岭区十二冶大厦四层山西省太原市杏花岭区十二冶大厦四层</p>
+    <div class="clearx" style="height:10px"></div>
+    <dl>
+    	<dd>
+            <label class="addrcheck">
+                <i class="yes"></i>
+                <input type="checkbox"/>
+                设为默认地址
+            </label>
+        </dd>
+        <dt><a class="edit" href="address_edit.html">编辑</a><a href="#" class="delete">删除</a></dt>
+        <div class="clearx"></div>
+    </dl>
+</article>
+<article class="addrbox">
+	<dl>
+    	<dd>张伟</dd><dt>15645345855</dt>
+        <div class="clearx"></div>
+    </dl>
+    <p>山西省太原市杏花岭区十二冶大厦四层山西省太原市杏花岭区十二冶大厦四层山西省太原市杏花岭区十二冶大厦四层</p>
+    <div class="clearx" style="height:10px"></div>
+    <dl>
+    	<dd>
+            <label class="addrcheck">
+                <i></i>
+                <input type="checkbox"/>
+                设为默认地址
+            </label>
+        </dd>
+        <dt><a class="edit" href="#">编辑</a><a href="#" class="delete">删除</a></dt>
+        <div class="clearx"></div>
+    </dl>
+</article>
+<article class="addrbox">
+	<dl>
+    	<dd>张伟</dd><dt>15645345855</dt>
+        <div class="clearx"></div>
+    </dl>
+    <p>山西省太原市杏花岭区十二冶大厦四层山西省太原市杏花岭区十二冶大厦四层山西省太原市杏花岭区十二冶大厦四层</p>
+    <div class="clearx" style="height:10px"></div>
+    <dl>
+    	<dd>
+            <label class="addrcheck">
+                <i></i>
+                <input type="checkbox"/>
+                设为默认地址
+            </label>
+        </dd>
+        <dt><a class="edit" href="#">编辑</a><a href="#" class="delete">删除</a></dt>
+        <div class="clearx"></div>
+    </dl>
+</article>
+<div style="height:5rem"></div>
+<footer><a href="#">添加新地址</a></footer>
+</body>
+</html>
+<script>
+	$(".addrcheck").click(function(){
+		if($(this).find("input").is(':checked')==false){
+			$(this).find("i").removeClass("yes");
+		}else{
+			$(this).find("i").addClass("yes");
+		}
+	});
+</script>

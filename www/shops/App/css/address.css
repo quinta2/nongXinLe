@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+body { background:#eee}
+body.edit { background:#fff}
+img { width:100%}
+header{width:100%; height:5rem;position: fixed;top:0;left:0; z-index:99; background:#fff; color:#191919; text-align:center; line-height:5rem; font-size:1.6rem;box-shadow:0 1px 3px #B9B9B9 }
+.return_btn { display:block; width:15px; height:5rem; position:absolute; top:0; left:10px; background:url(../images/icon_1.png) no-repeat center; background-size:25px auto}
+
+.addrbox { padding:10px; background:#fff; margin-bottom:10px}
+.addrbox dl { margin-bottom:10px}
+.addrbox dl dd { width:50%; float:left; font-size:1.4rem}
+.addrbox dl dt { width:50%; float:right; text-align:right; font-size:1.2rem}
+.addrbox p { font-size:1.3rem; line-height:18px; padding-bottom:5px; border-bottom:1px solid #d8d8d8}
+.addrbox dl dd label { line-height:30px; display:inline-block; height:30px; padding-left:25px; position:relative}
+.addrbox dl dd label i,article.addrbox dl dd label input { display:inline-block; width:20px; height:20px; position:absolute; left:0; top:5px; z-index:5}
+.addrbox dl dd label input { z-index:2; visibility:hidden}
+.addrbox dl dd label i { background:url(../images/address/cicle.png) no-repeat 0 0;background-size:20px 20px}
+.addrbox dl dd label i.yes { background:url(../images/address/cicle1.png) no-repeat; background-size:20px 20px}
+.addrbox dl dt a { display:inline-block; line-height:30px; color:#676767; font-size:1.3rem; margin-left:10px; padding-left:20px;}
+.addrbox dl dt a.edit { background:url(../images/address/edit.png) left center no-repeat; background-size:20px 20px}
+.addrbox dl dt a.delete { background:url(../images/address/delete.png) left center no-repeat;background-size:20px 20px}
+
+
+footer { width:100%; height:5rem; text-align:center; line-height:5rem; position:fixed; left:0; bottom:0; z-index:100 }
+footer a { display:block;font-size:1.6rem; color:#fff; background:#fa1545 }
+
+
+/*edit*/
+.addrbox.edit { padding:10px; height:100%; background:#fff; margin-top:0}
+.addrbox.edit dl { border-bottom:1px solid #d8d8d8; margin:0; height:40px; line-height:40px}
+.addrbox.edit dl dd { width:20%; color:#676767;font-size:1.3rem;}
+.addrbox.edit dl dt { width:80%; text-align:left;font-size:1.3rem;}
+.addrbox.edit>a { display:block; position:relative; height:40px; line-height:40px;}
+.addrbox.edit>a i { display:inline-block; width:10px; height:40px; position:absolute; top:0; right:0; background:url(../images/icon_10.png) no-repeat center}
+.addrbox.edit>a dt{ font-size:1.3rem; color:#000}
+.addrbox.edit dl dt input{ width:100%; border:none}
+.default label {line-height:30px; display:inline-block; height:30px; position:relative; width:100%; font-size:1.3rem }
+.default label i,.default label input { display:inline-block; width:20px; height:20px; position:absolute; top:5px; right:0; z-index:2;}
+.default label i { z-index:5; background:url(../images/address/cicle.png) no-repeat 0 0;background-size:20px 20px}
+.default label i.yes { z-index:5; background:url(../images/address/cicle1.png) no-repeat;background-size:20px 20px}
+.default label input { visibility:hidden}
+
+
+/*地址选择*/
+.opSortbox { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0, 0, 0, .5); z-index:110;}
+.opSortbox-bg {position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index:111;}
+.opSortcontent { position: absolute; top:30%; right: 0; bottom: 0;left: 0; background-color: #fff; z-index:112;}
+.opSortcontent h2 { display:block; font-size:1.5rem; color:#000; text-align:center; font-weight:normal; height:4.4rem; line-height:4.4rem; position:relative; border:1px solid #D8D8D8}
+.opSortcontent h2 a { display: inline-block; width: 20px;height:3px; background:#c6c4c5;line-height: 0;font-size:0;vertical-align: middle;-webkit-transform: rotate(45deg); position:absolute; top:25px; right:15px}
+.opSortcontent h2 a:after {content:'/';display:block;width: 20px;height:3px; background:#c6c4c5;-webkit-transform: rotate(-90deg);}
+.opSortcontent p a { display:inline-block; width:20%; float:left; height:40px; line-height:40px; color:#000; font-size:1.4rem; text-align:center}
+.opSortcontent p a.current { border-bottom:2px solid #f42f4a; color:#f42f4a}
+.opSortcontent p { border-bottom:1px solid #eee}
+.opaddr { width:88%; margin:0 auto; margin-top:10px; height:80%; overflow-y:auto}
+.opaddr li { line-height:30px; height:30px;}
+.opaddr li a { font-size:1.3rem; color:#000}
+.opaddr li.op  a{ color:#f42f4a}
+.opaddr li.op { position:relative}
+.opaddr li.op  i { display: inline-block; width: 7px;height:2px; background:#f42f4a;line-height: 0;font-size:0;vertical-align: middle;-webkit-transform: rotate(45deg); margin-left:5%}
+.opaddr li.op  i:after { content:'/';display:block;width: 15px;height:2px; background:#f42f4a;-webkit-transform: rotate(-90deg) translateY(-50%) translateX(50%);}

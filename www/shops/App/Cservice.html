@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>订单列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="css/base.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<link rel="stylesheet" href="css/Cservice.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<link rel='stylesheet' href='css/swiper.min.css'> <!--选项卡-->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swiper.min.js"></script>  <!--选项卡-->
+<script src="js/idangerous.swiper.min.js"></script> <!--选项卡-->
+</head>
+
+<body>
+<header>
+	退款/售后
+    <a href="#" class="return_btn"></a>
+</header>
+
+<div class="favor-header-bar">
+    <ul class="tabs">
+        <li class="default"><a href="javascript:void(0);" id="btn1" hidefocus="true">申请售后</a></li>
+        <li><a href="javascript:void(0);" id="btn2" hidefocus="true">进度查询</a></li>
+    </ul>
+</div>
+<div class="swiper-container favor-list">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide xq">
+            <div class="Cservice">
+                <p><input type="search" placeholder="商品名称、商品编号、订单编号、"/></p>
+                <article class="service">
+                	<b>完成</b>
+                    <p>订单编号：49782248225241<br/>下单时间：2017-02-16 18:50:22</p>
+                      <span>
+                          <a class="pic"><img src="images/Cservice_pic_1.jpg"></a>
+                          <span>
+                            <p>山西特产 唐明园 特级石磨面粉2500g</p>
+                            <p>数量：X1</p>
+                          </span>
+                          <a class="linebtn gray" href="#">申请售后</a>
+                          <div class="clearx"></div>
+                      </span>
+                      <span>
+                          <a class="pic"><img src="images/Cservice_pic_1.jpg"></a>
+                          <span>
+                            <p>山西特产 唐明园 特级石磨面粉2500g</p>
+                            <p>数量：X1</p>
+                          </span>
+                          <a class="linebtn gray" href="#">申请售后</a>
+                          <div class="clearx"></div>
+                      </span>
+                </article>
+                <article class="service">
+                	<b>完成</b>
+                    <p>订单编号：49782248225241<br/>下单时间：2017-02-16 18:50:22</p>
+                      <span>
+                          <a class="pic"><img src="images/Cservice_pic_1.jpg"></a>
+                          <span>
+                            <p>山西特产 唐明园 特级石磨面粉2500g</p>
+                            <p>数量：X1</p>
+                          </span>
+                          <a class="linebtn gray" href="#">申请售后</a>
+                          <div class="clearx"></div>
+                      </span>
+                </article>
+                <article class="service">
+                	<b>完成</b>
+                    <p>订单编号：49782248225241<br/>下单时间：2017-02-16 18:50:22</p>
+                      <span>
+                          <a class="pic"><img src="images/Cservice_pic_1.jpg"></a>
+                          <span>
+                            <p>山西特产 唐明园 特级石磨面粉2500g</p>
+                            <p>数量：X1</p>
+                          </span>
+                          <a class="linebtn gray" href="#">申请售后</a>
+                          <div class="clearx"></div>
+                      </span>
+                </article>
+                <article class="service">
+                	<b>完成</b>
+                    <p>订单编号：49782248225241<br/>下单时间：2017-02-16 18:50:22</p>
+                      <span>
+                          <a class="pic"><img src="images/Cservice_pic_1.jpg"></a>
+                          <span>
+                            <p>山西特产 唐明园 特级石磨面粉2500g</p>
+                            <p>数量：X1</p>
+                          </span>
+                          <a class="linebtn gray" href="#">申请售后</a>
+                          <div class="clearx"></div>
+                      </span>
+                </article>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="Cservice">
+                <p><input type="search" placeholder="商品名称、商品编号、订单编号、"/></p>
+                <article class="service">
+                    <b>处理中</b>
+                    <p>服务号：49782248225241</p>
+                    <a href="#">您的申请已提交，待卖家同意<i></i></a>
+                    <span>
+                      <a class="pic"><img src="images/Cservice_pic_1.jpg"></a>
+                      <span>
+                        <p>山西特产 唐明园 特级石磨面粉2500g</p>
+                        <p class="gray">申请时间：2016-12-29 08:15:15</p>
+                      </span>
+                      <div class="clearx"></div>
+                    </span>
+                    <p class="progress"><a class="linebtn gray" href="#">退款详情</a></p>
+                </article>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+<script>
+/*滑动选项卡*/
+var mySwiper = new Swiper('.swiper-container',{
+	autoHeight: true,
+	onSlideChangeStart: function(){
+		var h=$(".swiper-slide-visible").children("div").height();
+		$(".swiper-container").css("height",h);
+		$(".dropdiv").hide();
+		$(".tabs .default").removeClass('default');
+		$(".tabs li").eq(mySwiper.activeIndex).addClass('default');
+		
+		}
+});
+	 $(".tabs li").on('click',function(e){
+        e.preventDefault();
+        $(".tabs .default").removeClass('default');
+        $(this).addClass('default');
+        mySwiper.swipeTo($(this).index());
+      });
+      $(".tabs li").click(function(e){
+        e.preventDefault();
+      });
+</script>
+<script>
+$(function(){
+	/*控制选项卡第一页的高度*/
+	var h=$(".swiper-slide.xq.swiper-slide-visible").children("div").height();
+	$(".swiper-container").css("height",h);
+	
+	$(window).scroll(function(){
+		if ($(window).scrollTop()>$("header").height()) {
+			$(".favor-header-bar").addClass("fixtab");
+		}else{
+			$(".favor-header-bar").removeClass("fixtab");
+		}
+	});
+})
+</script>

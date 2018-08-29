@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>订单列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<title>登录页面</title>
+<link rel="stylesheet" href="css/base.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<link rel="stylesheet" href="css/orderlist.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+<link rel='stylesheet' href='css/swiper.min.css'> 
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swiper.min.js"></script>  <!--选项卡-->
+<script src="js/idangerous.swiper.min.js"></script> <!--选项卡-->
+</head>
+
+<body>
+<header>
+	订单详情
+    <a href="#" class="return_btn"></a>
+</header>
+<div class="clearx" style="height:5.8rem"></div>
+<div class="ordermessage">
+	<p>订单编号：32656656165464613464</p>
+    <a><b>物流跟踪</b>感谢您在农芯乐购物<i></i></a>
+</div>
+
+<div class="ordermessage">
+	<span class="shouh">
+    	<dl>
+        	<dd>收货人：王小利</dd><dt>87-12345655656</dt>
+            <div class="clearx"></div>
+        </dl>
+        <p>收货地址：山西省 太原市 杏花岭区 巨轮街道胜利街中铝大厦四层</p>
+    </span>
+</div>
+<div class="orderlist">
+    <div class="orderpage">
+        <article>
+            <b><a>贵人鸟厂家实体店</a><i></i></b>
+            <div class="clearx"></div>
+            <em class="flag">买家已付款</em>
+            <span class="Orgoods or1">
+                <a href="#"><img src="images/order/pic_1.jpg"></a>
+                <span class="message">
+                    <a href="#">MEISINI美行米字旗拉杆箱24寸旅行登机箱大放送</a>
+                    <i>颜色分类：黑色&nbsp;&nbsp;尺码：42</i>
+                </span>
+                <span class="price">
+                    <b><i>￥</i>3750.00</b>
+                    <em>X1</em>
+                    <p><a class="linebtn" href="#">退货</a></p>
+                </span>
+                <div class="clearx"></div>
+                
+            </span>
+            <span class="Orgoods">
+                <a href="#"><img src="images/order/pic_1.jpg"></a>
+                <span class="message">
+                    <a href="#">MEISINI美行米字旗拉杆箱24寸旅行登机箱大放送</a>
+                    <i>颜色分类：黑色&nbsp;&nbsp;尺码：42</i>
+                </span>
+                <span class="price">
+                    <b><i class="pr">￥</i>3750.00</b>
+                    <em>X1</em>
+                    <p><a class="linebtn" href="#">退货</a></p>
+                </span>
+                <div class="clearx"></div>
+            </span>
+        </article>
+        <article>
+            <a class="Or_more"><b>还有2件</b></a>
+        </article>
+        <article>
+        	<dl>
+            	<dd><p>运费</p><p>活动优惠</p><p><a>实付款</a>（含运费）</p></dd>
+                <dt><p>￥00.00 </p><p>￥00.00 </p><p class="red">￥7050.00 </p></dt>
+                <div class="clearx"></div>
+                <p>创建时间：2017-03-13  00：51：20</p>
+            </dl>
+        </article>
+        <article class="line">
+        	<dl>
+            	<dd><p>支付方式</p></dd>
+                <dt><p>在线支付</p></dt>
+                <div class="clearx"></div>
+            </dl>
+        </article>
+        <article>
+        	<h3>发票信息<a>纸质发票</a></h3>
+            <p>发票抬头：个人</p>
+            <p>发票内容：明细</p>
+        </article>
+        <article>
+        	<p class="btn">
+            <a href="#" class="linebtn gray">删除订单</a>
+            <a href="#" class="linebtn gray">申请售后</a>
+            <a href="#" class="linebtn gray">评价晒单</a>
+            <a href="#" class="linebtn">评价</a>
+            </p>
+        </article>
+    </div>
+    
+    <div class="clearx" style="height:10px"></div>
+</div>
+
+
+</body>
+</html>
+
+<script>
+$(function(){
+	
+	/*页面滑动标签置顶*/
+	$(window).scroll(function(){
+		
+		if ($(window).scrollTop()>=10){
+			$(".favor-header-bar").addClass("fixedbox");
+			$(".allLabels").addClass("fixedbox1");
+			$(".swiper-wrapper").css("margin-top",$(".favor-header-bar").height());
+		}else{
+			$(".favor-header-bar").removeClass("fixedbox");
+			$(".swiper-wrapper").css("margin-top","0");
+		}
+	});
+});
+</script>
